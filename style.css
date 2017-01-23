@@ -1,0 +1,182 @@
+
+.logo{
+    height: 45px;
+    border-radius: 5px;
+}
+
+a{
+  color:white;
+}
+
+.jumbotron{
+    padding-top: 80px;
+}
+
+.white{
+    color:white;
+}
+.flexThis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+.profile{
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.centerText{
+  text-align: center;
+}
+
+.sectionTitle{
+  background-color: white;
+}
+
+.workExperience{
+   background-size: cover;
+   background-image: url(./images/skyscrapers.jpg);
+   background-position: center center;
+}
+
+.education{
+   background-size: cover;
+   background-image: url(./images/library.jpg);
+   background-position: center center;
+}
+
+.experienceLogo{
+    margin-top: 10%;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fa{
+  font-size: 100px;
+  color:#01163D;
+}
+.fa:hover{
+  font-size: 100px;
+  color:#0080ff;
+}
+.underline{
+  text-decoration: underline;
+}
+
+.projects{
+   background-size: cover;
+   background-image: url(./images/projects.jpg);
+   background-position: center center;
+}
+
+.bullet{
+font-size: 22px;
+margin: 10px;
+}
+
+.projectContainer{
+  width:300px;
+  height:300px;
+  position: relative;
+  margin: 50px;
+  background: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  text-align:center;
+}
+
+
+/*CARD FLIP CLASSES BELOW*/
+.flip-container{
+  width:800px;
+  height:350px;
+  position: relative;
+  margin: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+.card{
+  text-align:center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.face.front{
+  background:white;
+}
+.face.back {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  background-color: #333;
+}
+.flip-container{
+  perspective: 1100px;
+}
+.card{
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.card:hover .front{
+  transform: rotateY(-180deg);
+}
+.card:hover .back {
+ transform: rotateY(0deg);
+}
+.face {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.face.front {
+  transform: rotateY(0deg);
+
+} 
+.face.back {
+  transform: rotateY(180deg); 
+
+}
+
+/*Education hover cards*/
+.hover-container{
+  width:250px;
+  height:250px;
+  position: relative;
+  margin: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+.edFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.edFace.front{
+  background:white;
+}
+.edFace.back {
+  display: block;
+  box-sizing: border-box;
+  color: white;
+  text-align: left;
+  background-color: #333;
+}
+.edFace {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.edFace.front {
+  transform: rotateY(0deg);
+} 
+.edFace.back {
+  transform: rotateY(180deg); 
+}
